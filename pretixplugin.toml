@@ -1,0 +1,5 @@
+[plugin]
+package = "pretix-question-placeholders"
+modules = [ "pretix_question_placeholders" ]
+marketplace_name = "question-placeholders"
+

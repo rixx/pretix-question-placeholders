@@ -1,0 +1,42 @@
+[project]
+name = "pretix-question-placeholders"
+dynamic = ["version"]
+description = "Add content to your emails based on the questions the customer answered, and the answer they gave."
+readme = "README.rst"
+license = {text = "Apache"}
+keywords = ["pretix"]
+authors = [
+    {name = "Tobias Kunze", email = "r@rixx.de"},
+]
+maintainers = [
+    {name = "Tobias Kunze", email = "r@rixx.de"},
+]
+
+dependencies = [
+]
+
+[project.entry-points."pretix.plugin"]
+pretix_question_placeholders = "pretix_question_placeholders:PretixPluginMeta"
+
+[project.entry-points."distutils.commands"]
+build = "pretix_plugin_build.build:CustomBuild"
+
+[build-system]
+requires = [
+    "setuptools",
+    "pretix-plugin-build",
+]
+
+[project.urls]
+homepage = "https://github.com/rixx/pretix-question-placeholders"
+repository = "https://github.com/rixx/pretix-question-placeholders"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.dynamic]
+version = {attr = "pretix_question_placeholders.__version__"}
+
+[tool.setuptools.packages.find]
+include = ["pretix*"]
+namespaces = false
