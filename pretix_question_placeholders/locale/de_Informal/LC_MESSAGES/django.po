@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-07 19:01+0100\n"
+"POT-Creation-Date: 2023-12-14 22:56+0000\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Tobias Kunze\n"
 "Language-Team: \n"
@@ -10,3 +10,184 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+#: local/pretix-question-placeholders/pretix_question_placeholders/__init__.py:16
+msgid "Email content based on question answers"
+msgstr ""
+
+#: local/pretix-question-placeholders/pretix_question_placeholders/__init__.py:19
+msgid ""
+"Add content to your emails based on the questions the customer answered, and "
+"the answer they gave."
+msgstr ""
+
+#: local/pretix-question-placeholders/pretix_question_placeholders/forms.py:43
+msgid "This slug is already in use!"
+msgstr ""
+
+#: local/pretix-question-placeholders/pretix_question_placeholders/forms.py:49
+msgid ""
+"This question already has a placeholder – please choose a slug to be able to "
+"tell them apart!"
+msgstr ""
+
+#: local/pretix-question-placeholders/pretix_question_placeholders/models.py:14
+#: local/pretix-question-placeholders/pretix_question_placeholders/templates/pretix_question_placeholders/list.html:25
+msgid "Question"
+msgstr ""
+
+#: local/pretix-question-placeholders/pretix_question_placeholders/models.py:20
+msgid "Placeholder name"
+msgstr ""
+
+#: local/pretix-question-placeholders/pretix_question_placeholders/models.py:22
+#, python-brace-format
+msgid ""
+"By default, the placeholder will look like {question_123}, but you can "
+"change it to {question_something_else}"
+msgstr ""
+
+#: local/pretix-question-placeholders/pretix_question_placeholders/models.py:28
+msgid "Fallback"
+msgstr ""
+
+#: local/pretix-question-placeholders/pretix_question_placeholders/models.py:29
+msgid "Will be used when no other condition matches. Can be empty."
+msgstr ""
+
+#: local/pretix-question-placeholders/pretix_question_placeholders/models.py:33
+msgid "Use fallback when the question was not answered"
+msgstr ""
+
+#: local/pretix-question-placeholders/pretix_question_placeholders/models.py:35
+msgid ""
+"Usually, the fallback will only be used when the question has been answered, "
+"but in a way that none of your rules cover. Turn on if you always want to "
+"use the fallback, even when the question has not been answered at all."
+msgstr ""
+
+#: local/pretix-question-placeholders/pretix_question_placeholders/models.py:79
+msgid "Equal to"
+msgstr ""
+
+#: local/pretix-question-placeholders/pretix_question_placeholders/models.py:80
+msgid "Equal to (case insensitive)"
+msgstr ""
+
+#: local/pretix-question-placeholders/pretix_question_placeholders/models.py:81
+msgid "Less than / earlier than"
+msgstr ""
+
+#: local/pretix-question-placeholders/pretix_question_placeholders/models.py:82
+msgid "Less or same as / earlier or same as"
+msgstr ""
+
+#: local/pretix-question-placeholders/pretix_question_placeholders/models.py:83
+msgid "Greater than / later than"
+msgstr ""
+
+#: local/pretix-question-placeholders/pretix_question_placeholders/models.py:84
+msgid "Greater or same as / later or same as"
+msgstr ""
+
+#: local/pretix-question-placeholders/pretix_question_placeholders/models.py:85
+msgid "Is true / has been answered"
+msgstr ""
+
+#: local/pretix-question-placeholders/pretix_question_placeholders/models.py:94
+msgid "Content"
+msgstr ""
+
+#: local/pretix-question-placeholders/pretix_question_placeholders/models.py:95
+msgid "Will be inserted into the email if the condition matches."
+msgstr ""
+
+#: local/pretix-question-placeholders/pretix_question_placeholders/signals.py:64
+msgid "Email placeholders"
+msgstr ""
+
+#: local/pretix-question-placeholders/pretix_question_placeholders/templates/pretix_question_placeholders/create.html:5
+#: local/pretix-question-placeholders/pretix_question_placeholders/templates/pretix_question_placeholders/edit.html:8
+#: local/pretix-question-placeholders/pretix_question_placeholders/templates/pretix_question_placeholders/list.html:4
+msgid "Placeholders"
+msgstr ""
+
+#: local/pretix-question-placeholders/pretix_question_placeholders/templates/pretix_question_placeholders/create.html:8
+msgid "New question-based email placeholder"
+msgstr ""
+
+#: local/pretix-question-placeholders/pretix_question_placeholders/templates/pretix_question_placeholders/create.html:16
+#: local/pretix-question-placeholders/pretix_question_placeholders/templates/pretix_question_placeholders/edit.html:136
+msgid "Save"
+msgstr ""
+
+#: local/pretix-question-placeholders/pretix_question_placeholders/templates/pretix_question_placeholders/delete.html:5
+msgid "Delete placeholders"
+msgstr ""
+
+#: local/pretix-question-placeholders/pretix_question_placeholders/templates/pretix_question_placeholders/delete.html:7
+msgid "Delete placeholder"
+msgstr ""
+
+#: local/pretix-question-placeholders/pretix_question_placeholders/templates/pretix_question_placeholders/delete.html:10
+#, python-format
+msgid ""
+"Are you sure you want to delete the placeholder <strong>{question_%(name)s}</"
+"strong>?"
+msgstr ""
+
+#: local/pretix-question-placeholders/pretix_question_placeholders/templates/pretix_question_placeholders/delete.html:13
+msgid "Cancel"
+msgstr ""
+
+#: local/pretix-question-placeholders/pretix_question_placeholders/templates/pretix_question_placeholders/delete.html:16
+msgid "Delete"
+msgstr ""
+
+#: local/pretix-question-placeholders/pretix_question_placeholders/templates/pretix_question_placeholders/edit.html:15
+msgid "Email placeholder"
+msgstr ""
+
+#: local/pretix-question-placeholders/pretix_question_placeholders/templates/pretix_question_placeholders/edit.html:25
+msgid "Rules"
+msgstr ""
+
+#: local/pretix-question-placeholders/pretix_question_placeholders/templates/pretix_question_placeholders/edit.html:49
+#, python-format
+msgid "Rule %(id)s"
+msgstr ""
+
+#: local/pretix-question-placeholders/pretix_question_placeholders/templates/pretix_question_placeholders/edit.html:97
+msgid "New rule"
+msgstr ""
+
+#: local/pretix-question-placeholders/pretix_question_placeholders/templates/pretix_question_placeholders/edit.html:130
+msgid "Add a new rule"
+msgstr ""
+
+#: local/pretix-question-placeholders/pretix_question_placeholders/templates/pretix_question_placeholders/list.html:7
+msgid "Question-based email placeholders"
+msgstr ""
+
+#: local/pretix-question-placeholders/pretix_question_placeholders/templates/pretix_question_placeholders/list.html:9
+msgid ""
+"These placeholders will allow you to change the content of pretix emails "
+"depending on the questions answers the receiving attendee has given. You "
+"have to create a new placeholder for every question that you want to use."
+msgstr ""
+
+#: local/pretix-question-placeholders/pretix_question_placeholders/templates/pretix_question_placeholders/list.html:17
+msgid "Create a new placeholder"
+msgstr ""
+
+#: local/pretix-question-placeholders/pretix_question_placeholders/templates/pretix_question_placeholders/list.html:24
+msgid "Placeholder"
+msgstr ""
+
+#: local/pretix-question-placeholders/pretix_question_placeholders/templates/pretix_question_placeholders/list.html:26
+msgid "Placeholder options"
+msgstr ""
+
+#: local/pretix-question-placeholders/pretix_question_placeholders/views.py:137
+msgid "Your changes have been saved."
+msgstr ""
